@@ -1,46 +1,136 @@
 <!DOCTYPE html>
-<html lang="en">
-<head><link rel="stylesheet" href="./styles.css"></head><body>
-<nav class="container">
-  <input id="nav-toggle" type="checkbox" />
-  <div class="logo">
-    ISTC<strong style="color: #153b66; font-weight: 800">Projects</strong>
-  </div>
-  <ul class="links">
-    <li class="list">
-      <a href="">Home</a>
-      <div class="home_underline"></div>
-    </li>
-    <li class="list">
-      <a href="">Projects</a>
-      <div class="home_underline"></div>
-    </li>
-    <li class="list">
-      <a href="">About</a>
-      <div class="home_underline"></div>
-    </li>
-    <button>About</button>
-  </ul>
-  <label for="nav-toggle" class="icon-burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </label>
+<html lang='en'>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav id="navbar">
+  <header class="topic">C Programming Language</header>
+<ul>
+  <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+  <li><a class="nav-link" href="#About">About</a></li>
+  <li><a class="nav-link" href="#Operator">Operator</a></li>
+  <li><a class="nav-link" href="#IO">IO</a></li>
+   <li><a class="nav-link" href="#Data_types">Data types</a></li>
+   <li>
+             <a class="nav-link" href="#Function_declarations">Function declarations</a></li>
+  <li><a class="nav-link" href="#Compilers">Compilers</a></li>
+</ul>
 </nav>
-<div class="header">
-  <h1>
-    text 1-----
-  </h1>
-  <div class="hero">
-    <div class="circles"></div>
-    <div class="circles"></div>
-    <div class="circles"></div>
-    <div class="circles"></div>
-    <div class="circles"></div>
-    <div class="circles"></div>
-  </div>
-</div>
-<div class="space" style="height: 200px; background-color: rgb(36, 36, 36)"></div>
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+         <header>Introduction</header>
+  <p>C is a powerful general-purpose programming language.</p>
+  <p>It can be used to develop software like operating systems, databases, compilers, and so on.</p>
+<br/>
+    <br/>By design, C's features cleanly reflect the capabilities of the targeted CPUs. It has found lasting use in operating systems, device drivers, protocol stacks, though decreasingly for application software.
+<br/><ul>
+<li>It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential.</li><li>A successor to the programming language B, C was originally developed at Bell Labs by Dennis Ritchie between 1972 and 1973 to construct utilities running on Unix.</li><li> It was applied to re-implementing the kernel of the Unix operating system. During the 1980s, C gradually gained popularity. It has become one of the most widely used programming languages, with C compilers available for almost all modern computer architectures and operating systems.</li><li> C is commonly used on computer architectures that range from the largest supercomputers to the smallest microcontrollers and embedded systems.</li><li> C has been standardized by ANSI since 1989 (ANSI C) and by the International Organization for Standardization (ISO).</li></ul></p>
+</section>
+<section id="About" class="main-section"><header>About</header>
+<p><ul>
+  <li><strong>Procedural Language </strong>- Instruction are executed line by line.</li>
+<li><strong>Speed </strong>- C prgramming language is faster than most programming language like Python,Java,etc.</li>
+<li><strong>General Purpose </strong>- C Programming can be used to develop os,embedded system,databases,etc.</li>
+<li><strong>Portable </strong>- You can move C programs from one platform to another, and run it without any or minimal changes.</li>
+</ul></p>
+</section>
+<section id="Operator" class="main-section"><header>Operator</header>
+<p>
+<strong>An operator is a symbol that tells the compiler to perform a certain mathematical or
+logical manipulation. Operators are used in programs to manipulate data and
+variables.</strong>
+<li><strong><p>Arithmetic Operators</p></strong>=,-,*,/,%</li>
+<li> <strong><p>Relational Operators: </p></strong>==,!=,>,<,<=,>=</li>
+<li><strong><p>Logical Operators:</p></strong> &&,||, !</li>
+<li><strong><p>Assignment Operators:</p></strong> =,+=,-=</li>
 
+
+</p><code>#include<stdio.h>
+void main()
+{
+ int num;
+ printf("Enter a number: ");
+ scanf("%d", &num);
+ (num>=0)?printf("Positive."):printf("Negative");
+
+}</code>
+<caption>Using Operator to Check Entered to Console is Positive or Negative</caption>
+</section>
+<section id="IO"" class="main-section"><header>IO</header>
+<p>
+  <strong>C Output</strong>
+  <br/>In C programming, <code>printf()</code> </p><p>is one of the main output function. The function sends formatted output to the screen. For example,</p>
+<code>#include <stdio.h>
+int main()
+{
+    // Displays the string inside quotations
+    printf("C Programming");
+    return 0;
+}
+</code>
+<strong>C Input</strong>
+In C programming, <code>scanf() </code>is one of the commonly used function to take input from the user. The scanf() function reads formatted input from the standard input such as keyboards.
+<code>#include <stdio.h>
+int main()
+{
+    int testInteger;
+    printf("Enter an integer: ");
+    scanf("%d", &testInteger);
+    printf("Number = %d",testInteger);
+    return 0;
+}</code>
+</p>
+</section>
+<section class="main-section" id="Data_types">
+      <header>Data types</header>
+<table><thead><tr><th class="headingg">Type</th><th>Size(in Bytes)</th></tr></thead><tbody><tr><td>int</td><td>4</<td></td></tr>
+<tr><td>char</td><td>1</<td></td></tr>
+<tr><td>float</td><td>4</<td></td></tr>
+<tr><td>double</td><td>8</<td></td></tr>
+<tr><td>long double</td><td>10</<td></td></tr>
+<tr><td>long int</td><td>8</<td></td></tr></tbody></table>
+</section>
+
+
+<section class="main-section" id="Function_declarations">
+       <header>Function declarations</header>
+<p> There are two types of functions in C programming: </p>
+<ol><li><strong>Library functions: </strong>are the functions which are declared in the C header files</li>
+<li><strong>User-defined: </strong>are the functions which are created by the C programmer, so that he/she can use it many times.</li></ol>
+<code>#include<stdio.h>
+int sum(int, int);
+void main()
+{
+    int a,b,result;
+    printf("\nGoing to calculate the sum of two numbers:");
+    printf("\nEnter two numbers:");
+    scanf("%d %d",&a,&b);
+    result = sum(a,b);
+    printf("\nThe sum is : %d",result);
+}
+int sum(int a, int b)
+{
+    return a+b;
+}  </code>
+<caption>A User-defined function For getting sum of two integers</<caption>
+</section>
+<section id="Compilers" class="main-section"><header>Compilers</header>
+  <strong>
+<ul>
+  <li><p>GNU Collector Compiler</p></li>
+  <li><p>Borland Turbo C</p></li>
+  <li><p>Tiny C</p></li>
+  <li><p>Open64</p></li>
+  <li><p>Lattice C</p></li>
+  <li><p>MiniGW</p></li>
+</ul>
+  </strong>
+</section>
+  </<main>
+
+</main>
 </body>
-</html>
+
+
+  </html>
