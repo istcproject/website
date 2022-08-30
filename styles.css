@@ -123,6 +123,7 @@ button:hover::before {
   transform: skewX(40deg) translateX(100px);
   animation: btnshine 1s cubic-bezier(0.97, 0.02, 0.44, 0.99) infinite;
 }
+
 @keyframes btnshine {
   from {
     transform: skewX(40deg) translateX(-90px);
@@ -238,7 +239,7 @@ nav .icon-burger .line {
   border-radius: 100%;
   position: absolute;
   border: 3px solid rgb(255, 255, 255);
-  background: linear-gradient(148.92deg, #58bbf2 13.69%, #00278c 88.85%);
+  background: linear-gradient(148.92deg, #03045e 13.69%, #48cae4 88.85%);
   box-shadow: 0px 0px 135px rgba(0, 0, 0, 0.35);
   animation: circles 1s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
