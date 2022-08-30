@@ -1,12 +1,15 @@
-#timeline {
+#highlight {
   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.75;
   display: flex;
   background-color: #031625;
 }
-#timeline:hover .tl-item {
+#highlight:hover .tl-item {
   width: 23.3333%;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .tl-item {
@@ -151,7 +154,7 @@ header nav button:hover{
  border-radius: 25px;
  border: 0;
  background-color: #2a9d8f;
- 
+
  color: white;
  font-family: montserrat;
  cursor: pointer;
@@ -202,4 +205,7 @@ color:white;}
   100% {
     transform: translate3d(85px,0,0);
   }
+}
+#list{
+  height:1000px;
 }
