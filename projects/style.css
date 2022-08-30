@@ -5,6 +5,7 @@
   display: flex;
   background-color: #031625;
 }
+
 #highlight:hover .tl-item {
   width: 23.3333%;
 }
@@ -114,7 +115,7 @@ html {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 body{
-  
+
  margin: 0;
 }
 header{
