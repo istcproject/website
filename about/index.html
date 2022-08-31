@@ -16,7 +16,7 @@
   <nav class="site-navigation">
     <div class="nav">
        <button class="custom-btn btn-11"><span>About ISTC</span></button>
-        <button class="custom-btn btn-11">Gallery</button>
+      <a href="#gallery">  <button class="custom-btn btn-11">Gallery</button></a>
           <button class="custom-btn btn-11">Courses</button>
 
          <button class="custom-btn btn-11">Credits</button>
@@ -25,18 +25,31 @@
     </div>
   </nav>
 </header>
-<!-- partial -->
-<div style="background-color:blue; height:200px;">
 
-</div>
-<section><p>hii</p>
-  <?php
-  echo "<h2>PHP is Fun!</h2>";
-  echo "Hello world!<br>";
-  echo "I'm about to learn PHP!<br>";
-  echo "This ", "string ", "was ", "made ", "with multiple parameters.";
-  ?></section>
+<div style="margin-top:100px;"></div>
+<section id="aboutistc">
+
+</section>
+<!-- partial -->
+<section id="gallery">
+  <div id="main">
+
+      <div class="content">
+          <p>You can press <kbd>▲</kbd> <kbd>▼</kbd> on your keyboard or swipe up/down to navigate. Mouse wheel works too.</p>
+ <a href="#aboutistc" >Home</a>
+      </div>
+      <div class="buttons">
+          <button class="next" onclick="go(-1)"></button>
+          <button class="prev" onclick="go(1)"></button>
+      </div>
+  </div>
+  <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script><script  src="./script.js"></script>
+
+</section>
+
+
+
 
 </body>
 </html>
-<iframe src="https://albumizr.com/a/Fa0M" scrolling="no" frameborder="0" allowfullscreen width="700" height="400"></iframe>
