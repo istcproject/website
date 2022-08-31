@@ -26,6 +26,14 @@ a {
 
   display: inline-block;
 }
+.fr {
+position:relative;
+top:0px;
+bottom:0px;
+left:0px;
+right:0px;
+ /* coz you need vertical and horizontal scrollbars */
+}
 .frame {
   width: 90%;
   margin: 5px auto;

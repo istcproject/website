@@ -1,11 +1,11 @@
 // sorry for the spaghetti code and redundant variables, i wasn't exactly a good coder back then
 
-const cols = 4;
+const cols = 3;
 const main = document.getElementById('main');
 let parts = [];
 
 let images = [
- 
+
  "https://github.com/istcproject/website/blob/main/images/students/a%20(15).jpg?raw=true" , "https://github.com/istcproject/website/blob/main/images/students/297822113_574696351022886_4513437628451319371_n.jpg?raw=true", "https://github.com/istcproject/website/blob/main/images/students/a%20(20).jpg?raw=true",
   "https://github.com/istcproject/website/blob/main/images/students/297891185_574696397689548_8528029607913277384_n.jpg?raw=true",
  "https://github.com/istcproject/website/blob/main/images/students/a%20(11).jpg?raw=true", "https://github.com/istcproject/website/blob/main/images/students/293873393_562827822209739_8721471257820044310_n.jpg?raw=true"
