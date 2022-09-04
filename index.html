@@ -49,14 +49,39 @@
   <div class="space" style="height: 2px; background-color: rgb(36, 36, 36)"></div>
 
 
-  <iframe class="fr" src="./photogallery" style="height:500px; width:100%;"></iframe>
+  <embed class="fr" src="./photogallery" style="height:500px; width:100%; border: 0" ></embed>
 
 
+  <!-- partial:index.partial.html -->
+  <!-- Explanation in JS tab -->
+  <section id="welcome">
+  <!-- The two texts -->
+  <div id="container3">
+  	<span id="text1"></span>
+  	<span id="text2"></span>
+  </div>
+
+  <!-- The SVG filter used to create the merging effect -->
+  <svg id="filters">
+  	<defs>
+  		<filter id="threshold">
+  			<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+  			<feColorMatrix in="SourceGraphic"
+  					type="matrix"
+  					values="1 0 0 0 0
+  									0 1 0 0 0
+  									0 0 1 0 0
+  									0 0 0 255 -140" />
+  		</filter>
+  	</defs>
+  	</svg></section>
+  <!-- partial -->
+    <script  src="./scripts.js"></script>
 
 
 </body>
 <footer>
-  <iframe class="fr" src="./footer" style="height:110px; width:100%;" style="overflow:hidden; border:none"></iframe>
+  <embed class="fr" src="./footer" style="height:110px; width:100%;" frameBorder=0;border: 0></embed>
   <section>
 
 </footer>

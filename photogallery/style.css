@@ -106,17 +106,7 @@ body #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before {
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
 }
-body #user-button .u-icons a[href="https://twitter.com/Osorpenke"].show:before {
-  opacity: 1;
-  transition: 0.25s ease-out;
-}
-body #user-button .u-icons a[href="https://twitter.com/Osorpenke"] div {
-  color: #1da1f2;
-}
-body #user-button .u-icons a[href="https://codepen.io/z-"] div {
-  background: black;
-  color: white;
-}
+
 body #user-button .u-icons a.u-random div {
   position: relative;
   top: -1px;
@@ -216,6 +206,7 @@ body {
   height: 100vh;
   font-family: "Roboto", sans-serif;
   transition: 0.25s;
+  background-color: black;
 }
 body.dark {
   background: #232223;

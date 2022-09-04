@@ -318,7 +318,22 @@ nav .icon-burger .line {
   font-weight: 500;
   animation: h1 1.2s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
 
+/* Your average text styling */
+#text1, #text2 {
+  position: absolute;
+  width: 100%;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-size: 80pt;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #fff;
+}
 @keyframes h1 {
   from {
     transform: translateY(180%);
