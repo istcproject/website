@@ -41,7 +41,7 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   padding: 30px;
   border-radius: 20px;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(40px);
   box-shadow: 0px 0px 135px rgba(0, 0, 0, 0.45);
   border: 1px solid rgba(255, 255, 255, 0.2);
   animation: nav 1s cubic-bezier(0.9, 0.02, 0.19, 1);
@@ -95,12 +95,14 @@ nav li {
   transform: translatex(0px);
 }
 
-button {
+.container button {
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: white;
-  background-color: #153b66;
+  background: rgb(58,180,119);
+  background-image: linear-gradient(90deg, rgba(65,63,251,1) 0%, rgba(181,252,70,1) 100%);
+
   border-radius: 100px;
   padding: 10px 30px 10px 30px;
   transform-origin: center;
@@ -109,25 +111,13 @@ button {
   cursor: pointer;
 }
 
-button::before {
-  content: " ";
-  border-radius: 10px;
-  position: absolute;
-  top: 0px;
-  width: 40px;
-  height: 40px;
-  transform: skewX(40deg) translateX(-90px);
-  background-color: #578ac4;
-  opacity: 0;
-  z-index: 99;
-  transition: 0.8s cubic-bezier(0.97, 0.02, 0.44, 0.99);
-}
 
-.bt:hover::before {
-  border-radius: 10px;
-    opacity: .7;
-  transform: skewX(40deg) translateX(50px);
-  animation: btnshine 1s cubic-bezier(0.97, 0.02, 0.44, 0.99) infinite;
+
+.container button:hover{
+background-image: red;
+border:1px solid black;
+animate:btnshine;
+     background-position: right center;
 }
 
 @keyframes btnshine {
