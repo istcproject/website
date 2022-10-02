@@ -7,6 +7,7 @@
 
 body {
   background-color: rgb(31, 31, 31);
+
 }
 
 .container {
@@ -241,7 +242,7 @@ nav .icon-burger .line {
 .hero .circles {
   width: 100px;
   height: 100px;
-  border-radius: 80%;
+  border-radius: 10%;
   position: absolute;
   border: 3px solid rgb(255, 255, 255);
   background: linear-gradient(148.92deg, #f4c95d 13.69%, #6457A6 88.85%);
