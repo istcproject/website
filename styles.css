@@ -242,7 +242,7 @@ nav .icon-burger .line {
 .hero .circles {
   width: 100px;
   height: 100px;
-  border-radius: 10%;
+  border-radius: 90%;
   position: absolute;
   border: 3px solid rgb(255, 255, 255);
   background: linear-gradient(148.92deg, #f4c95d 13.69%, #6457A6 88.85%);
@@ -265,6 +265,8 @@ nav .icon-burger .line {
   width: 50rem;
   height: 50rem;
   z-index: 2;
+  background: rgb(2,0,36);
+background: linear-gradient(328deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 22%, rgba(106,9,123,1) 48%, rgba(7,118,147,1) 68%, rgba(0,212,255,1) 100%);
   animation: circles 0.8s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
 .hero .circles:nth-child(2) {
@@ -273,10 +275,14 @@ nav .icon-burger .line {
   width: 50rem;
   height: 50rem;
   z-index: 3;
+  background: rgb(58,180,119);
+  background: linear-gradient(172deg, rgba(58,180,119,1) 0%, rgba(197,29,253,1) 50%, rgba(252,176,69,1) 100%);
   animation: circles 1s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
 .hero .circles:nth-child(3) {
   top: 40%;
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
   right: -5%;
   width: 80rem;
   height: 80rem;
@@ -288,6 +294,8 @@ nav .icon-burger .line {
   left: -10%;
   width: 60rem;
   height: 60rem;
+  background: rgb(34,193,195);
+background: linear-gradient(172deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
   z-index: 0;
   animation: circles 1.4s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
@@ -296,6 +304,8 @@ nav .icon-burger .line {
   left: 18%;
   width: 90rem;
   height: 90rem;
+  background: rgb(131,58,180);
+background: linear-gradient(172deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
   z-index: 0;
   animation: circles 1.5s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
@@ -305,6 +315,8 @@ nav .icon-burger .line {
   width: 60rem;
   height: 60rem;
   z-index: 0;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   animation: circles 1.8s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
 
