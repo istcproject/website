@@ -2,7 +2,9 @@
 <html lang='en'>
 <head>
   <title>ISTC PROJECTS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 <body>
@@ -33,7 +35,7 @@
     </label>
   </nav>
   <div class="header" >
-    <h1>
+    <h1 class="head_line text-center">
     Site made by ISTICIAN for Showcasing Projects made by ISTC Students
     </h1>
     <div class="hero">
@@ -52,39 +54,31 @@
   <embed class="fr" src="./photogallery" style="height:500px; width:100%; border: 0" ></embed>
 
 
-  <!-- partial:index.partial.html -->
-  <!-- Explanation in JS tab -->
-  <section id="welcome">
-  <!-- The two texts -->
-  <div id="container3">
-  	<span id="text1"></span>
-  	<span id="text2"></span>
-  </div>
-
-  <!-- The SVG filter used to create the merging effect -->
-  <svg id="filters">
-  	<defs>
-  		<filter id="threshold">
-  			<!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
-  			<feColorMatrix in="SourceGraphic"
-  					type="matrix"
-  					values="1 0 0 0 0
-  									0 1 0 0 0
-  									0 0 1 0 0
-  									0 0 0 255 -140" />
-  		</filter>
-  	</defs>
-  	</svg></section>
-  <!-- partial -->
-    <script  src="./scripts.js"></script>
-
 
 </body>
-<footer>
-  <embed class="fr" src="./footer" style="height:110px; width:100%;" frameBorder=0;border: 0></embed>
-  <section>
+ <footer class="text-center text-lg-start" style="background-color: #db6930;">
+    <div class=" d-flex justify-content-center py-5">
+     <a href="https://www.facebook.com/istc.chandigarh"> <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-facebook-f"></i>
+       </button></a><a href="https://www.youtube.com/watch?v=S3XLpF4PRNU&ab_channel=IndoSwissTrainingCentre%2CChandigarhINDIA">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-youtube"></i>
+      </button></a>
+     <a href="https://www.instagram.com/istc_de_vehle/"> <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-instagram"></i>
+       </button></a><a href="https://twitter.com/istc_chandigarh">
+      <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+        <i class="fab fa-twitter"></i>
+      </button></a>
+    </div>
 
-</footer>
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+      <a class="text-white" href="http://istc.ac.in/">ISTC Official Website</a>
+    </div>
+
+  </footer>
 
 
   </html>
