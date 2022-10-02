@@ -109,28 +109,31 @@ button {
 
 button::before {
   content: " ";
+  border-radius: 10px;
   position: absolute;
   top: 0px;
   width: 40px;
   height: 40px;
   transform: skewX(40deg) translateX(-90px);
   background-color: #578ac4;
-  opacity: 0.8;
+  opacity: 0;
   z-index: 99;
   transition: 0.8s cubic-bezier(0.97, 0.02, 0.44, 0.99);
 }
 
-button:hover::before {
-  transform: skewX(40deg) translateX(100px);
+.bt:hover::before {
+  border-radius: 10px;
+    opacity: .7;
+  transform: skewX(40deg) translateX(50px);
   animation: btnshine 1s cubic-bezier(0.97, 0.02, 0.44, 0.99) infinite;
 }
 
 @keyframes btnshine {
   from {
-    transform: skewX(40deg) translateX(-90px);
+    transform: skewX(40deg) translateX(-40px);
   }
   to {
-    transform: skewX(40deg) translateX(100px);
+    transform: skewX(40deg) translateX(60px);
   }
 }
 
