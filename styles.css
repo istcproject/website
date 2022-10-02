@@ -1,9 +1,58 @@
 * {
   margin: 0;
   padding: 0;
-
+cursor:none;
 }
 
+.cursor {
+  z-index:100;
+    width: 30px;
+    height: 30px;
+     box-shadow: 2px 2px 1px 2px lightblue;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
+    pointer-events: none;
+}
+
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
+}
 
 body {
   background-color: rgb(31, 31, 31);
@@ -234,7 +283,7 @@ nav .icon-burger .line {
   height: 100px;
   border-radius: 90%;
   position: absolute;
-  border: 3px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
   background: linear-gradient(148.92deg, #f4c95d 13.69%, #6457A6 88.85%);
   box-shadow: 0px 0px 135px rgba(0, 0, 0, 0.35);
   animation: circles 1s cubic-bezier(0.9, 0.02, 0.19, 1);
