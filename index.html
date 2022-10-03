@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
   <title>ISTC PROJECTS</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -8,6 +9,7 @@
 
 </head>
 <div class="cursor"></div>
+
 <body style="background-color: #212021;">
   <nav class="container">
     <input id="nav-toggle" type="checkbox" />
@@ -27,7 +29,7 @@
         <a href="./about">About</a>
         <div class="home_underline"></div>
       </li>
-    <a href="https://github.com/istcproject/istcproject">  <button  class="bt " style="border-radius:20px;" onclick="https://github.com/istcproject/istcproject">Github</button></a>
+      <a href="https://github.com/istcproject/istcproject"> <button class="bt " style="border-radius:20px;" onclick="https://github.com/istcproject/istcproject">Github</button></a>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -35,9 +37,9 @@
       <div class="line"></div>
     </label>
   </nav>
-  <div class="header" >
+  <div class="header">
     <h1 class="head_line text-center">
-    Site made by ISTICIAN for Showcasing Projects made by ISTC Students
+      Site made by ISTICIAN for Showcasing Projects made by ISTC Students
     </h1>
     <div class="hero">
       <div class="circles"></div>
@@ -51,47 +53,60 @@
 
   <div class="space" style="height: 2px; background-color: rgb(36, 36, 36)"></div>
 
-
-  <embed class="fr" src="./photogallery" style="height:500px; width:100%; border: 0" ></embed>
-
-
+  <embed class="fr" src="./photogallery" style="height:500px; width:100%; border: 0"></embed>
 
 </body>
- <footer class="text-center text-lg-start" style="background-color: #4a4e69;">
-    <div class=" d-flex justify-content-center py-5" >
-     <a href="https://www.facebook.com/istc.chandigarh"> <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+<footer class="text-center text-lg-start" style="background-image: linear-gradient(
+  45deg,
+  hsl(240deg 100% 20%) 0%,
+  hsl(289deg 100% 21%) 11%,
+  hsl(315deg 100% 27%) 22%,
+  hsl(329deg 100% 36%) 33%,
+  hsl(337deg 100% 43%) 44%,
+  hsl(357deg 91% 59%) 56%,
+  hsl(17deg 100% 59%) 67%,
+  hsl(34deg 100% 53%) 78%,
+  hsl(45deg 100% 50%) 89%,
+  hsl(55deg 100% 50%) 100%
+);">
+  <div class=" d-flex justify-content-center py-5">
+    <a href="https://www.facebook.com/istc.chandigarh"> <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
         <i class="fab fa-facebook-f"></i>
-       </button></a><a href="https://www.youtube.com/watch?v=S3XLpF4PRNU&ab_channel=IndoSwissTrainingCentre%2CChandigarhINDIA">
+      </button></a><a href="https://www.youtube.com/watch?v=S3XLpF4PRNU&ab_channel=IndoSwissTrainingCentre%2CChandigarhINDIA">
       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
         <i class="fab fa-youtube"></i>
       </button></a>
-     <a href="https://www.instagram.com/istc_de_vehle/"> <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+    <a href="https://www.instagram.com/istc_de_vehle/"> <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
         <i class="fab fa-instagram"></i>
-       </button></a><a href="https://twitter.com/istc_chandigarh">
+      </button></a><a href="https://twitter.com/istc_chandigarh">
       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
         <i class="fab fa-twitter"></i>
       </button></a>
-    </div>
+  </div>
 
-    <!-- Copyright -->
-    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
 
-      <a class="text-white" href="http://istc.ac.in/">Click here for ISTC Official Website</a>
-    </div>
+    <a class="text-white" href="http://istc.ac.in/">Click here for ISTC Official Website</a>
+  </div>
 
-  </footer>
-<script>        const cursor = document.querySelector('.cursor');
+</footer>
+<script>
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    $(".cursor").attr('disabled', 'disabled');
+    $(".cursor").attr('disabled', 'disabled');
+  } else {
+    const cursor = document.querySelector('.cursor');
+    document.addEventListener('mousemove', e => {
+      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+    })
+    document.addEventListener('click', () => {
+      cursor.classList.add("expand");
+      setTimeout(() => {
+        cursor.classList.remove("expand");
+      }, 500)
+    })
+  }
+</script>
 
-        document.addEventListener('mousemove', e => {
-            cursor.setAttribute("style", "top: "+(e.pageY - 10)+"px; left: "+(e.pageX - 10)+"px;")
-        })
-
-        document.addEventListener('click', () => {
-            cursor.classList.add("expand");
-
-            setTimeout(() => {
-                cursor.classList.remove("expand");
-            }, 500)
-        })</script>
-
-  </html>
+</html>
