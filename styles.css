@@ -231,9 +231,11 @@ nav .icon-burger .line {
 }
 
 /* ----------header---------------- */
-
+.header h1:hover{
+transition:all 2s;
+  transform: translate3d(0, -20px, 22px);}
 .istcian:hover{
-
+ transform: translate3d(0, -10px, 22px);
 -webkit-animation:colorchange 5s infinite alternate;
 }
 
