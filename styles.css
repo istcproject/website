@@ -279,7 +279,7 @@ nav .icon-burger .line {
   animation: circles 0.8s cubic-bezier(0.9, 0.02, 0.19, 1);
 }
 .hero .circles:nth-child(2) {
-  top: 25rem;
+  top: 10rem;
   left: 20rem;
   width: 50rem;
   height: 50rem;
@@ -301,7 +301,7 @@ nav .icon-burger .line {
     rgba(63, 94, 251, 1) 0%,
     rgba(252, 70, 107, 1) 100%
   );
-  right: -5%;
+  right: -25%;
   width: 80rem;
   height: 80rem;
   z-index: 4;
