@@ -76,43 +76,6 @@ body #user-button .u-icons {
      backdrop-filter: blur(10px);
   }*/
 }
-body #user-button .u-icons a {
-  color: inherit;
-  display: grid;
-  place-items: center;
-  width: 30px;
-  height: 30px;
-  text-decoration: none;
-}
-body #user-button .u-icons a div {
-  padding: 0.5rem;
-  transition: 0s;
-}
-body #user-button .u-icons a[href="https://twitter.com/Osorpenke"] {
-  position: relative;
-}
-body #user-button .u-icons a[href="https://twitter.com/Osorpenke"]:before {
-  content: "Middle Click";
-  position: absolute;
-  top: -1.5rem;
-  left: 50%;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  white-space: pre;
-  transform: translateX(-50%);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.25s ease-in;
-  background: #fffc;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-}
-
-body #user-button .u-icons a.u-random div {
-  position: relative;
-  top: -1px;
-  -webkit-animation: diespin 2s linear infinite;
-          animation: diespin 2s linear infinite;
-}
 @-webkit-keyframes diespin {
   0% {
     transform: rotate(0deg);
@@ -319,7 +282,7 @@ body .options .option.active .label .info > div {
 }
 body .options .option:not(.active) {
   flex-grow: 1;
-  border-radius: 30px;
+  border-radius: 100px;
 }
 body .options .option:not(.active) .shadow {
   bottom: -40px;
@@ -377,5 +340,5 @@ body .options .option .label .info .main {
   font-size: 1.2rem;
 }
 body .options .option .label .info .sub {
-  transition-delay: 0.1s;
+  transition-delay: .5s;
 }
